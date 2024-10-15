@@ -5,7 +5,7 @@
 #include <iostream>
 
 class SensorStub {
- public:
+public:
     SensorStub() {
         std::srand(static_cast<unsigned int>(std::time(nullptr)));
     }

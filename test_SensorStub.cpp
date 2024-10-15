@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../include/SensorStub.h"
+#include "SensorStub.h"
 
 TEST(SensorStubTest, GenerateRandomSensorValue) {
     SensorStub sensor;

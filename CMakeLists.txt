@@ -18,13 +18,19 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-file(GLOB SOURCES "src/*.cpp")
+file(GLOB SENDER_SOURCES "sender.cpp")
 add_executable(
     sender
-  ${SOURCES}
+  ${SENDER_SOURCES}
 )
 
-file(GLOB TEST "test/*.cpp")
+file(GLOB PROCESSOR_SOURCES "processor.cpp")
+add_executable(
+    processor
+  ${PROCESSOR_SOURCES}
+)
+
+file(GLOB TEST "test_SensorStub.cpp")
 add_executable(
     test-sender
   ${TEST}
